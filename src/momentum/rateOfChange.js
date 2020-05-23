@@ -35,7 +35,7 @@ const rateOfChange = {
     { key: 'roc', type: 'line' }
   ],
   calcTechnicalIndicator: (kLineDataList, calcParams) => {
-    const result = {}
+    const result = []
     kLineDataList.forEach((kLineData, i) => {
       const roc = {}
       if (i >= calcParams[0] - 1) {
