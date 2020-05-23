@@ -21,10 +21,11 @@
  * SOFTWARE.
  */
 
+import simpleMovingAverage from './movingaverage/simpleMovingAverage'
 import bullAndBearIndex from './directionalmovement/bullAndBearIndex'
 import rateOfChange from './momentum/rateOfChange'
 import priceAndVolumeTrend from './volume/priceAndVolumeTrend'
 
 export {
-  bullAndBearIndex, rateOfChange, priceAndVolumeTrend
+  simpleMovingAverage, bullAndBearIndex, rateOfChange, priceAndVolumeTrend
 }

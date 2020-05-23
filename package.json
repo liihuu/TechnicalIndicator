@@ -12,6 +12,10 @@
     "type": "git",
     "url": "https://github.com/liihuu/TechnicalIndicator"
   },
+  "keywords": [
+    "KLineChart",
+    "TechnicalIndicator"
+  ],
   "author": "liihuu",
   "license": "MIT",
   "private": false,
