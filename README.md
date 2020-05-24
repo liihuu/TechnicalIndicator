@@ -10,6 +10,9 @@ npm install klinecharts-technical-indicator
 ```
 
 ## Classification
+### Moving Average
++ SMA(Simple Moving Average)
+
 ### Directional Movement
 + BBI(Bull And Bear Index)
 
