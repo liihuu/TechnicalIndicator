@@ -28,11 +28,13 @@
 const simpleMovingAverage = {
   name: 'SMA',
   calcParams: [12, 2],
+  series: 'price',
+  precision: 2,
   plots: [
     { key: 'sma', type: 'line' }
   ],
   shouldCheckParamCount: true,
-  isPriceTechnicalIndicator: true,
+  shouldOhlc: true,
   calcTechnicalIndicator: (kLineDataList, calcParams) => {
     let oldSma = 0
     const result = []
