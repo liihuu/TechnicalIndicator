@@ -25,7 +25,10 @@ import simpleMovingAverage from './movingaverage/simpleMovingAverage'
 import bullAndBearIndex from './directionalmovement/bullAndBearIndex'
 import rateOfChange from './momentum/rateOfChange'
 import priceAndVolumeTrend from './volume/priceAndVolumeTrend'
+import awesomeOscillator from './oscillator/awesomeOscillator'
 
 export {
-  simpleMovingAverage, bullAndBearIndex, rateOfChange, priceAndVolumeTrend
+  simpleMovingAverage, bullAndBearIndex,
+  rateOfChange, priceAndVolumeTrend,
+  awesomeOscillator
 }
