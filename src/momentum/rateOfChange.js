@@ -29,13 +29,15 @@
  */
 const rateOfChange = {
   name: 'ROC',
-  calcParams: [12],
+  calcParams: [12, 6],
   shouldCheckParamCount: true,
   plots: [
-    { key: 'roc', type: 'line' }
+    { key: 'roc', type: 'line' },
+    { key: 'rocMa', type: 'line' }
   ],
   calcTechnicalIndicator: (kLineDataList, calcParams) => {
     const result = []
+    let rocSum = 0
     kLineDataList.forEach((kLineData, i) => {
       const roc = {}
       if (i >= calcParams[0] - 1) {
@@ -45,6 +47,11 @@ const rateOfChange = {
           roc.roc = (close - agoClose) / agoClose
         } else {
           roc.roc = 0
+        }
+        rocSum += roc.roc
+        if (i >= calcParams[0] - 1 + calcParams[1] - 1) {
+          roc.rocMa = rocSum / calcParams[1]
+          rocSum -= result[i - (calcParams[1] - 1)].roc
         }
       }
       result.push(roc)
