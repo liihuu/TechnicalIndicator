@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/liihuu/TechnicalIndicator.svg?branch=master)](https://travis-ci.org/liihuu/TechnicalIndicator)
 
 Technical indicators for [KLineChart(https://github.com/liihuu/KLineChart/)](https://github.com/liihuu/KLineChart/).
+Since klinecharts v6.1.0, the chart and technical indicators are no longer divided into libraries.
+This library is only available for kinecharts v5.3.0 - v6.0.5
 
 ## Installing
 ```bash
@@ -28,7 +30,7 @@ npm install klinecharts-technical-indicator
 ## Version Mapping
 | technical-indicators | klinecharts |
 |        :----:        |    :----:   |
-|        v1.1.0        |    v5.5.0   |
+|        v1.1.0        |    v5.5.0-v6.0.5   |
 |        v1.0.0        |    v5.3.0   |
 
 ## License

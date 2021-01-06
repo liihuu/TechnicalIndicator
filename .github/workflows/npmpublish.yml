@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.0.0
-      - uses: actions/setup-node@v1.1.0
+      - uses: actions/setup-node@v1.4.4
         with:
           node-version: 12
       - run: npm install && npm run build
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.0.0
-      - uses: actions/setup-node@v1.1.0
+      - uses: actions/setup-node@v1.4.4
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
